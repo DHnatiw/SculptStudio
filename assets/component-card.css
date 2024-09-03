@@ -8,6 +8,8 @@
 .card {
   text-decoration: none;
   text-align: var(--text-alignment);
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .card:not(.ratio) {
@@ -136,7 +138,7 @@
 
 .card__information {
   grid-row-start: 2;
-  padding: 1.3rem 1rem;
+  padding: 1rem;
 }
 
 .card:not(.ratio) > .card__content {
@@ -247,6 +249,14 @@
   .grid--2-col-tablet-down .card__content quick-add-bulk .quantity {
     width: auto;
   }
+
+  .card__heading {
+    font-size: calc(var(--font-heading-scale) * 1rem);
+  }
+
+  .card__content {
+    font-size: calc(var(--font-heading-scale) * 0.5rem);
+  }
 }
 
 .card-information quantity-popover volume-pricing {
@@ -289,6 +299,10 @@
   margin: 1.3rem;
 }
 
+.card__media{
+    margin-top: 10px;;
+}
+
 .card__media .media img {
   height: 100%;
   object-fit: cover;
@@ -300,9 +314,11 @@
   height: 100%;
 }
 
+
 .card__heading {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .card__heading:last-child {
@@ -504,6 +520,10 @@
 
 .card-article-info {
   margin-top: 1rem;
+}
+
+.card__media img {
+  border-radius: var(--border-radius);
 }
 
 /* Card Shapes */
