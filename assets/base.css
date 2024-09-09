@@ -1277,7 +1277,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button:not([disabled]):hover{
-    background-color: blue;
+    background-color: black;
     color: white;
 }
 
