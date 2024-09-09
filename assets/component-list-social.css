@@ -8,18 +8,25 @@
   .list-social {
     justify-content: center;
   }
+
+  .list-social__item i {
+    font-size: 1.8rem;  /* Smaller size for mobile */
+    text-decoration: none;
+  }
 }
 
-.list-social__item .icon {
-  height: 2.2rem;
-  width: 2.2rem;
+.list-social__link:hover {
+  color:  var(--color-secondary-button)                     /* Fade to white on hover */
 }
 
 .list-social__link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease-in;   /* Slower fade with 'ease-in' effect */
   align-items: center;
   display: flex;
   padding: 1.1rem;
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
 }
 
 .utility-bar .list-social__link {
