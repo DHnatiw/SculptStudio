@@ -10,6 +10,18 @@
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_Tr8bwX": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_Tr8bwX"
+      ],
       "settings": {
         "color_scheme": "scheme-4",
         "newsletter_enable": false,
@@ -21,8 +33,8 @@
         "payment_enable": true,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     }
   },
