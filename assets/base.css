@@ -1277,7 +1277,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button:not([disabled]):hover{
-    background-color: black;
+    background-color: #466895;
     color: white;
 }
 
@@ -1287,9 +1287,8 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button__button--unbranded:hover::after {
   --border-offset: 1.3px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
-
+      rgba(70, 104, 149, var(--border-opacity)), /* Update to blue */
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(70, 104, 149, var(--alpha-button-background)); /* Update to blue */
 }
 
 .button--secondary:after {
@@ -2353,11 +2352,13 @@ input[type='checkbox'] {
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgb(var(--color-background));
+  /* background-color: rgb(var(--color-background)); */
+  background-color: #466895;
+  height: auto;
 }
 
 .header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  /* border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08); */
 }
 
 .header {
@@ -2775,8 +2776,7 @@ details[open] > .header__submenu {
 .header__inline-menu {
   width: 80%;
   margin: 0 auto;
-  background: #fff;
-  padding: 50px 0;
+  /* padding: 50px 0; */
 
 }
 
@@ -2828,7 +2828,7 @@ details[open] > .header__submenu {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #466895;
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s ease;
