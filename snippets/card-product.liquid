@@ -53,9 +53,15 @@
       "
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
-    {% comment %} Title {% endcomment %}
-        <div class="card__content">
-          <div class="card__information">
+   
+      <div
+        class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
+        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+      >
+      {% comment %} Main image displaed on the card {% endcomment %}
+        {%- if card_product.featured_media -%}
+          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+            {% comment %} Title {% endcomment %}
             <h5
               class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
               {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -71,14 +77,6 @@
                 {{ card_product.title | escape }}
               </a>
             </h5>
-          </div>
-        </div>
-      <div
-        class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
-        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
-      >
-        {%- if card_product.featured_media -%}
-          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
@@ -126,6 +124,7 @@
             </div>
           </div>
         {%- endif -%}
+        {% comment %} END -  Main image displaed on the card {% endcomment %}
         <div class="card__content">
           <div class="card__information">
             <h3
@@ -165,7 +164,7 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <div class="card-information">
+          
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
@@ -292,7 +291,7 @@
               {% endif %}
             {%- endif -%}
           </div>
-        </div>
+        
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
         {% if quick_add == 'standard' %}
           <div class="quick-add no-js-hidden">

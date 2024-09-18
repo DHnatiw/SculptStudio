@@ -8,8 +8,9 @@
 .card {
   text-decoration: none;
   text-align: var(--text-alignment);
-  padding: 1rem;
+  /* padding: 1rem; */
   box-sizing: border-box;
+  
 }
 
 .card:not(.ratio) {
@@ -138,7 +139,7 @@
 
 .card__information {
   grid-row-start: 2;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .card:not(.ratio) > .card__content {
@@ -191,6 +192,31 @@
 .card__information-volume-pricing-note--button + .global-settings-popup.quantity-popover__info .quantity__rules {
   text-align: left;
 }
+
+.card__heading.h5{
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  text-align: right;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: calc(var(--font-heading-scale) * 2rem); /* Adjust font size */
+}
+
+.card__heading {
+  bottom: 0px; /* Adjust this value to move it further up or down */
+  right: 0px; /* Adjust this value to move it further left or right */
+  position: absolute;
+  color: white; /* White text color */
+  -webkit-text-stroke: 2px black; /* Black stroke around the text */
+  paint-order: stroke fill; /* Ensure the stroke is painted first */
+  z-index: 10; /* Ensure the text is above the image */
+  background-color: rgba(0, 0, 0, 0.4); 
+  width: 100%; /* Ensure it only takes up the bottom */
+  text-align: right; /* Align the text to the right */
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+} 
 
 @media screen and (min-width: 990px) {
   .grid--6-col-desktop .card__content quick-add-bulk .quantity {
@@ -275,8 +301,8 @@
 
 @media screen and (min-width: 750px) {
   .card__information {
-    padding-bottom: 1.7rem;
-    padding-top: 1.7rem;
+    /* padding-bottom: 1.7rem;
+    padding-top: 1.7rem; */
   }
 }
 
