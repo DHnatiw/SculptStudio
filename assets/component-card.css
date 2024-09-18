@@ -199,8 +199,6 @@
   padding-bottom: 2rem;
   padding-right: 1rem;
   padding-top: 1rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: calc(var(--font-heading-scale) * 2rem); /* Adjust font size */
 }
 
 .card__heading {
@@ -239,6 +237,17 @@
     + .global-settings-popup.quantity-popover__info {
     width: calc(100% + var(--border-width) + 1rem);
   }
+
+  .card__heading.h5{
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    text-align: right;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: calc(var(--font-heading-scale) * 2rem); /* Adjust font size */
+    }
+  
 }
 
 @media screen and (max-width: 749px) {
@@ -276,13 +285,28 @@
     width: auto;
   }
 
-  .card__heading {
-    font-size: calc(var(--font-heading-scale) * 1rem);
-  }
 
   .card__content {
     font-size: calc(var(--font-heading-scale) * 0.5rem);
   }
+
+
+  .card__heading.h5{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0px;
+    margin: 0px;
+  }
+
+  .h5{
+    font-size: calc(var(--font-heading-scale) * 1.2rem); /* Adjust font size */
+    }
+
+  .h5 a {
+    width: 90%;
+    text-decoration: none;
+  }
+
 }
 
 .card-information quantity-popover volume-pricing {
@@ -306,6 +330,7 @@
   }
 }
 
+/* 
 .card__badge {
   align-self: flex-end;
   grid-row-start: 3;
@@ -319,15 +344,12 @@
 
 .card__badge.right {
   justify-self: flex-end;
-}
+} */
 
 .card:not(.card--horizontal) > .card__content > .card__badge {
   margin: 1.3rem;
 }
 
-.card__media{
-    margin-top: 10px;;
-}
 
 .card__media .media img {
   height: 100%;
