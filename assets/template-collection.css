@@ -3,6 +3,10 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  
+  .collection__title {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 989px) {
