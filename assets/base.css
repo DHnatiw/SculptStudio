@@ -80,7 +80,7 @@
 .page-width {
   /* max-width: var(--page-width); */
   /* margin: 0 auto; */
-  padding: 0 1.5rem;
+    padding: 0 1.5rem;
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
@@ -103,7 +103,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+   padding: 0rem 15rem 5rem 15rem;
   }
 
   .header.page-width,
@@ -114,6 +114,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .page-width--narrow {
     padding: 0 9rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .page-width-desktop {
@@ -127,8 +129,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 
   .page-width--narrow {
@@ -138,7 +140,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .page-width-desktop {
     max-width: var(--page-width);
-    padding: 0 5rem;
+    padding: 0 15rem 5rem;;
   }
 }
 
@@ -2226,8 +2228,8 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   body:has(.section-header .header:not(.drawer-menu)) .utility-bar .page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 
   .announcement-bar-slider {
@@ -3129,6 +3131,10 @@ details-disclosure > details {
       padding-left: var(--grid-desktop-horizontal-spacing);
       padding-bottom: var(--grid-desktop-vertical-spacing);
     }
+
+    .product-grid .grid__item {
+      padding-bottom: var(--grid-desktop-vertical-spacing);
+    }
   }
 
   .grid--gapless .grid__item {
@@ -3146,11 +3152,6 @@ details-disclosure > details {
     padding-bottom: var(--grid-mobile-vertical-spacing);
   }
 
-  @media screen and (min-width: 750px) {
-    .product-grid .grid__item {
-      padding-bottom: var(--grid-desktop-vertical-spacing);
-    }
-  }
 }
 
 .font-body-bold {
