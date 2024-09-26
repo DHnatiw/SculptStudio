@@ -2,6 +2,10 @@
   "sections": {
     "featured_collection": {
       "type": "featured-collection",
+      "custom_css": [
+        "HTML{background-color: #010c1e;}",
+        ".collection {border-radius: 15px;}"
+      ],
       "settings": {
         "title": "Featured products",
         "heading_size": "h1",
