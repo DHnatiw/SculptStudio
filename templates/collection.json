@@ -1,14 +1,25 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "banner": {
       "type": "main-collection-banner",
       "custom_css": [
-        ".collection-hero__title {font-family: \"Titillium Web\", sans-serif; font-weight: 400;}"
+        ".collection-hero__title {font-family: \"Titillium Web\", sans-serif; font-weight: 400;}",
+        ".collection-hero__text-wrapper {background-color: white;}",
+        ".facets-wrapper{margin:0px;}"
       ],
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
-        "color_scheme": "scheme-0fc68518-e8e7-46df-a66b-6848fdd0d23d"
+        "color_scheme": "scheme-2"
       }
     },
     "product-grid": {
