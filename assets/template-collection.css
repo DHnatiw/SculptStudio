@@ -7,6 +7,11 @@
     /* background-color: #010c1e; */
 }
 
+.collection__view-all a:not(.link) {
+    margin-top: 5rem;
+}
+
+
 @media screen and (max-width: 749px) {
     .collection .grid__item:only-child {
         flex: 0 0 100%;
@@ -16,6 +21,11 @@
     .collection__title {
         text-align: center;
     }
+
+    .collection__view-all a:not(.link) {
+        margin-top: 2rem;
+    }
+
 }
 
 @media screen and (max-width: 989px) {
@@ -109,6 +119,4 @@
         }
     }
 
-    .collection__view-all a:not(.link) {
-        margin-top: 1rem;
-    }
+}
