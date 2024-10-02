@@ -106,8 +106,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .header.page-width,
   .utility-bar__grid.page-width {
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
+    /* padding-left: 3.2rem;
+    padding-right: 3.2rem; */
   }
 
   .page-width--narrow {
@@ -127,8 +127,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-left: 15rem;
-    padding-right: 15rem;
+    /* padding-left: 15rem;
+    padding-right: 15rem; */
   }
 
   .page-width--narrow {
@@ -2453,7 +2453,7 @@ input[type='checkbox'] {
 
 .header__heading-link {
   display: inline-block;
-  padding: 0.75rem;
+  /* padding: 0.75rem; */
   text-decoration: none;
   word-break: break-word;
 }

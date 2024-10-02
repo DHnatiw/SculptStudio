@@ -1,8 +1,17 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Logo.png",
+    "logo": "shopify://shop_images/Photoroom_20241002_100937.png",
     "logo_width": 80,
-    "favicon": "shopify:\/\/shop_images\/Logo_33a0e0b2-e70b-4136-9280-430f847af1f3.png",
+    "favicon": "shopify://shop_images/Photoroom_20241002_100937.png",
     "type_header_font": "inter_n6",
     "heading_scale": 150,
     "type_body_font": "inter_n4",
@@ -99,12 +108,12 @@
     "sale_badge_color_scheme": "scheme-b9ee2917-55e9-49e9-9026-d7f246963305",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p></p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com\/profile.php?id=61564868465006",
+    "social_facebook_link": "https://www.facebook.com/profile.php?id=61564868465006",
     "social_instagram_link": "",
     "social_youtube_link": "",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@sculptstudio3d",
+    "social_tiktok_link": "https://www.tiktok.com/@sculptstudio3d",
     "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
@@ -383,7 +392,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",

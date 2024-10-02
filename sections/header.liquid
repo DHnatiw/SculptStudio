@@ -92,7 +92,7 @@
 {%- style -%}
   .header {
     font-weight :600;
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    padding: {{ section.settings.padding_top | times: 1 | round: 0 }}px {{ section.settings.padding_right | times: 1 | round: 0 }}px {{ section.settings.padding_bottom | times: 1 | round: 0 }}px {{ section.settings.padding_left | times: 1 | round: 0 }}px; 
     display: flex;
     justify-content: space-between;  /* Ensures logo is on the left, menu centered, and icons on the right */
     align-items: center;
@@ -652,6 +652,26 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "min": 0,
+      "max": 36,
+      "step": 4,
+      "unit": "px",
+      "label": "padding left",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_right",
+      "min": 0,
+      "max": 36,
+      "step": 4,
+      "unit": "px",
+      "label": "padding right",
+      "default": 0
     }
   ],
   "blocks": [
